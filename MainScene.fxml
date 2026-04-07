@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="549.0" prefWidth="718.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+   <children>
+      <Label fx:id="ShakeTitle" layoutX="14.0" layoutY="14.0" text="Build your Shake:">
+         <font>
+            <Font size="15.0" />
+         </font></Label>
+      <ChoiceBox fx:id="ShakeSizeChoiceBox" layoutX="74.0" layoutY="45.0" prefWidth="150.0" />
+      <Label fx:id="ShakeSizeLbl" layoutX="14.0" layoutY="49.0" text="Size:" />
+      <Label fx:id="ShakeFlavorLBL" layoutX="12.0" layoutY="95.0" text="Flavor:" />
+      <ChoiceBox fx:id="ShakeFlavorCB" layoutX="74.0" layoutY="91.0" prefWidth="150.0" />
+      <Label fx:id="ToppingsShakeLBL" layoutX="12.0" layoutY="143.0" text="Toppings:" />
+      <ChoiceBox fx:id="ToppingShakeCB" layoutX="74.0" layoutY="139.0" prefWidth="150.0" />
+      <Button fx:id="AddShakeBTTN" layoutX="30.0" layoutY="190.0" mnemonicParsing="false" onAction="#addShake" prefHeight="25.0" prefWidth="211.0" text="Add Shake to Order" />
+      <Label fx:id="subTitle" layoutX="12.0" layoutY="237.0" text="Build Your Sub:">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Label fx:id="subSizeLbl" layoutX="14.0" layoutY="275.0" text="Size:" />
+      <ChoiceBox fx:id="subSizeCB" layoutX="74.0" layoutY="271.0" prefWidth="150.0" />
+      <Label fx:id="subMeatLbl" layoutX="11.0" layoutY="368.0" text="Meat:" />
+      <ChoiceBox fx:id="subMeatCB" layoutX="74.0" layoutY="364.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="subBreadCB" layoutX="74.0" layoutY="318.0" prefWidth="150.0" />
+      <Label fx:id="subBreadLbl" layoutX="13.0" layoutY="322.0" text="Bread:" />
+      <Button fx:id="addSubBttn" layoutX="30.0" layoutY="465.0" mnemonicParsing="false" onAction="#addSub" prefHeight="25.0" prefWidth="211.0" text="Add Sub to Order" />
+      <ListView fx:id="orderView" layoutX="264.0" layoutY="44.0" prefHeight="318.0" prefWidth="412.0" />
+      <Button fx:id="completeOrderBttn" layoutX="264.0" layoutY="364.0" mnemonicParsing="false" onAction="#completeOrder" prefHeight="25.0" prefWidth="412.0" text="Complete Order" />
+      <Label layoutX="15.0" layoutY="416.0" text="Topping:" />
+      <ChoiceBox fx:id="subToppCB" layoutX="74.0" layoutY="412.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>
