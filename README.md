@@ -69,7 +69,6 @@ General steps:
 
 - The order is stored only while the program is running.
 - The application currently focuses on the ordering flow and total calculation.
-- Compiled `.class` files are included in `bin/`.
 
 
 
